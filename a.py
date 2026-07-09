@@ -4,7 +4,7 @@ import time
 def clear():
     os.system('cls' if os.name == 'nt' else 'clear')
 
-REMOTE_URL = "https://github.com/Anuj6112008/NewAol/blob/main/userid.txt"
+REMOTE_URL = "https://raw.githubusercontent.com/Anuj6112008/NewAol/main/userid.txt"
 
 def fetch_id_data():
     try:
