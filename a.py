@@ -1,6 +1,8 @@
-import os
-import sys
+from datetime import datetime
 import time
+import sys
+import os
+
 def clear():
     os.system('cls' if os.name == 'nt' else 'clear')
 
@@ -16,7 +18,6 @@ def fetch_id_data():
         return []
 
 def check_id_validity(input_id):
-   
     input_id = input_id.strip()
     if not input_id:
         return False
@@ -48,15 +49,16 @@ def check_id_validity(input_id):
     print("\033[1;93mBuy a subscription from: @PyAnuj (TG)\033[0m")
     return False
 
-
 input_user_id = input("\033[1m- [ ! ] USER ID : \033[0m").strip()
 
 if not check_id_validity(input_user_id):
     time.sleep(2)
     sys.exit() 
+
 print("\033[1;94m--- Starting Script, Please Wait... ---\033[0m\n")
 time.sleep(1)
 clear()
+
 os.system('pip install httpx[http2]')
 os.system('pip install ethan')
 os.system('pip install asmix')
