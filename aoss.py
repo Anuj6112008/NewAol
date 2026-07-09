@@ -3,6 +3,7 @@ from datetime import datetime
 import time
 import sys
 import os
+
 def clear():
     os.system('cls' if os.name == 'nt' else 'clear')
 
@@ -18,7 +19,6 @@ def fetch_id_data():
         return []
 
 def check_id_validity(input_id):
-   
     input_id = input_id.strip()
     if not input_id:
         return False
@@ -50,16 +50,16 @@ def check_id_validity(input_id):
     print("\033[1;93mBuy a subscription from: @PyAnuj (TG)\033[0m")
     return False
 
-
 input_user_id = input("\033[1m- [ ! ] USER ID : \033[0m").strip()
 
 if not check_id_validity(input_user_id):
     time.sleep(2)
     sys.exit() 
+
 print("\033[1;94m--- Starting Script, Please Wait... ---\033[0m\n")
 time.sleep(1)
 clear()
-import os
+
 import os
 import requests
 from user_agent import generate_user_agent
@@ -70,7 +70,6 @@ from concurrent.futures import ThreadPoolExecutor
 from cfonts import render, say
 from requests import post as pp
 from user_agent import generate_user_agent as gg
-import os
 
 try:
     import httpx
@@ -79,7 +78,6 @@ except:
     os.system("pip install httpx httpx[http2] user_agent")
     import httpx
     import user_agent
-    
 
 import requests
 from user_agent import generate_user_agent
@@ -89,164 +87,51 @@ import string
 import json
 from random import choice as cc
 from random import randrange as rr
-import random
 import base64
 import re
 import ethan
 import sys
 from asmix import Instagram
-import random
-import string
-import json
-import requests
 from threading import Thread
 from rich.console import Console
 Con = Console()
-import os
 from random import randrange
 
-try:
-  import requests
-except:
-  os.system("pip install requests")
-  import requests
-try:
-  from user_agent import generate_user_agent
-except:
-  os.system("pip install user_agent")
-  from user_agent import generate_user_agent
-try:
-  from time import time
-except:
-  os.system("pip install time")
-  from time import time
-try:
-  from hashlib import md5
-except:
-  os.system("pip install hashlib")
-  from hashlib import md5
-try:
-  from random import choice
-except:
-  os.system("pip install random")
-  from random import choice
-try:
-  from concurrent.futures import ThreadPoolExecutor
-except:
-  os.system("pip install concurrent.futures")
-from concurrent.futures import ThreadPoolExecutor
-ab=0
-go=0
-Ex = 0
-try:
-  import requests
-except:
-  os.system("pip install requests")
-  import requests
-try:
-  from user_agent import generate_user_agent
-except:
-  os.system("pip install user_agent")
-  from user_agent import generate_user_agent
-try:
-  from time import time
-except:
-  os.system("pip install time")
-  from time import time
-try:
-  from hashlib import md5
-except:
-  os.system("pip install hashlib")
-  from hashlib import md5
-try:
-  from random import choice
-except:
-  os.system("pip install random")
-  from random import choice
-try:
-  from concurrent.futures import ThreadPoolExecutor
-except:
-  os.system("pip install concurrent.futures")
-  from concurrent.futures import ThreadPoolExecutor
-hits=0
-bads_instgram=0
-bads_email=0
-min_followers = 0  
-BLUE = '\033[94m'
-RESET = '\033[0m'
-BOLD = '\033[1m'
-YELLOW = '\033[93m'
-RED = '\033[91m'
-GREEN = '\033[92m'
-CYAN = '\033[96m'
-MAGENTA = '\033[95m'
+# Global variables
+hits = 0
+bads_instgram = 0
+bads_email = 0
+go = 0
+min_followers = 0
 
-from asmix import Instagram    
-Z = '\033[1;31m' 
+# Colors
+Z = '\033[1;31m'
 F = '\033[1;33m'
-Z1 = '\033[2;31m' 
-S = '\033[2;32m' 
+S = '\033[2;32m'
 A = '\033[2;34m'
-C = '\033[2;35m' 
+C = '\033[2;35m'
 B = '\033[2;36m'
-Y = '\033[1;34m' 
-Z = '\033[1;31m' 
-X = '\033[1;33m' 
-Z1 = '\033[2;31m' 
-F = '\033[2;32m' 
-A = '\033[2;34m'
-C = '\033[2;35m' 
-B = '\033[2;36m'
-Y = '\033[1;34m' 
-B="\033[1;30m" 
-R="\033[1;31m" 
-G="\033[1;32m" 
-Y="\033[1;33m" 
-Bl="\033[1;34m" 
-P="\033[1;35m"
-C="\033[1;36m" 
-N="\033[1;37m" 
-import random
-from time import sleep
-b = random.randint(5,208)
-ji = random.randint(5,208)
-bo = f'\x1b[38;5;{b}m'
-ksmk=f'\x1b[38;5;{ji}m'
-import socket
-
-
-Z = '\033[1;31m' 
-X = '\033[1;33m' 
-Z1 = '\033[2;31m' 
-F = '\033[2;32m' 
-A = '\033[2;34m'
-Y = '\033[1;34m' 
+Y = '\033[1;34m'
+X = '\033[1;33m'
 M = '\x1b[1;37m'
-U = '\x1b[1;37m'
-X = '\033[1;33m' 
-Y = '\033[1;34m' 
-M = '\x1b[1;37m'
-S = '\033[1;33m'
-R = '\033[1;31m' 
-F = '\033[2;32m' 
-E= "\033[1;97m" 
-B = '\033[2;36m'
-Y = '\033[1;34m' 
-C1 = '\033[2;35m'
-H="\x1b[38;5;208m" 
-ED='\x1b[38;5;208m'
-ED='\x1b[38;5;208m'
+E = "\033[1;97m"
+H = "\x1b[38;5;208m"
+P = "\033[1;35m"
+G = "\033[1;32m"
+R = "\033[1;31m"
+
 try:
- from cfonts import render, say
+    from cfonts import render, say
 except:
- os.system('pip install python-cfonts')
+    os.system('pip install python-cfonts')
+
 ANUJ = render('{ANUJ}', colors=['red', 'white'], align='center')
 print(f'''
 {P}  ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓      
                       {ANUJ}
     {S} dev -- @PyAnuj
-{H}  ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛               ''')
-
+{H}  ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛               
+''')
 
 ID = input(f"{P} Enter Your Chat ID :  ")
 print('')
@@ -255,17 +140,13 @@ print('')
 min_followers = int(input(f"{G}Enter Minimum Followers Required : "))
 print('')
 
-
-
-
-yy='azertyuiopmlkjhgfdsqwxcvbn'
-ids=[]
+yy = 'azertyuiopmlkjhgfdsqwxcvbn'
+ids = []
 os.system('clear')
 
 def info(username, jj):
     global hits
     try:
-      
         url = f"https://i.instagram.com/api/v1/users/web_profile_info/?username={username}"
         headers = {
             "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
@@ -280,7 +161,6 @@ def info(username, jj):
         data = response.json()
         user = data['data']['user']
         
-        
         name = user.get("full_name", "N/A")
         user_id = user.get("id", "N/A")
         followers = user.get("edge_followed_by", {}).get("count", 0)
@@ -290,19 +170,15 @@ def info(username, jj):
         is_private = user.get("is_private", False)
         is_verified = user.get("is_verified", False)
         
-     
+        # ✅ CHECK MINIMUM FOLLOWERS
         if followers < min_followers:
-          
             return False
-        
-        
         
         try:
             date = Instagram.date(user_id)
         except:
             date = "N/A"
         
-       
         adh = f"""
     
     ┃ 𝗡𝗲𝘄 𝗛𝗶𝘁 𝗜𝗻𝘀𝘁𝗮𝗴𝗿𝗮𝗺 𝗔𝗰𝗰𝗼𝘂𝗻𝘁 ┃
@@ -313,19 +189,18 @@ def info(username, jj):
      User ID   :  {user_id}
      Created   :  {date}
      Posts     :  {posts}
-     Followers :  {followers} 
+     Followers :  {followers} ✅
      Following :  {following}
      Private   :  {is_private}
+     Verified  :  {is_verified}
     ════════════════════════════════
      Profile   :  https://instagram.com/{username}
     ════════════════════════════════
      By @PyAnuj 
             """
         
-        
         hits += 1
         
-     
         with open("anuhitsj.txt", "a", encoding="utf-8") as file:
             file.write(adh + "\n" + "="*50 + "\n")
         requests.post(f"https://api.telegram.org/bot{token}/sendMessage?chat_id={ID}&text={adh}")
@@ -333,7 +208,6 @@ def info(username, jj):
         return True
         
     except Exception as e:
-        
         adh = f"""
     
     ┃ 𝗡𝗲𝘄 𝗛𝗶𝘁 𝗜𝗻𝘀𝘁𝗮𝗴𝗿𝗮𝗺 𝗔𝗰𝗰𝗼𝘂𝗻𝘁 ┃  
@@ -348,9 +222,8 @@ def info(username, jj):
             """
         
         try:
-           
             hits += 1
-            with open("ethan.txt", "a", encoding="utf-8") as file:
+            with open("anuhitsj.txt", "a", encoding="utf-8") as file:
                 file.write(adh + "\n" + "="*50 + "\n")
             requests.post(f"https://api.telegram.org/bot{token}/sendMessage?chat_id={ID}&text={adh}")
             return True
@@ -358,9 +231,7 @@ def info(username, jj):
             print(f"Error sending message: {e}")
             return False
 
-
 def check_email_on_instagram(email):
-
     try:
         with httpx.Client(http2=True, timeout=30.0) as client:
             response = client.post(
@@ -388,7 +259,6 @@ def check_email_on_instagram(email):
                 elif data.get('error_type') == 'email_is_not_taken':
                     return False
                 else:
-                
                     if 'available' in str(data).lower() and 'false' in str(data).lower():
                         return True
                     return False
@@ -400,7 +270,6 @@ def check_email_on_instagram(email):
         return False
 
 def create_aol_account(username):
-
     try:
         first_names = ["Liam", "Olivia", "Noah", "Emma", "Ava", "Sophia", "James", "Isabella", "Gabriella", "Mia"]
         last_names = ["Johnson", "Brown", "Davis", "Miller", "Wilson", "Taylor", "Moore", "Collins", "Anderson", "Thomas"]
@@ -412,10 +281,21 @@ def create_aol_account(username):
         req = requests.get("https://login.aol.com/account/create", headers={'User-Agent': agent})
         
         soup = BeautifulSoup(req.text, "html.parser")
-        crumb = soup.find("input", {"name": "crumb"}).get("value", "")
-        acrumb = soup.find("input", {"name": "acrumb"}).get("value", "")
-        sessionIndex = soup.find("input", {"name": "sessionIndex"}).get("value", "")
-        asId = soup.find("input", {"name": "asId"}).get("value", "")
+        
+        # ✅ FIX: Check if elements exist before calling .get()
+        crumb_tag = soup.find("input", {"name": "crumb"})
+        acrumb_tag = soup.find("input", {"name": "acrumb"})
+        sessionIndex_tag = soup.find("input", {"name": "sessionIndex"})
+        asId_tag = soup.find("input", {"name": "asId"})
+        
+        # Agar koi tag nahi mila toh return False
+        if not crumb_tag or not acrumb_tag or not sessionIndex_tag or not asId_tag:
+            return False
+        
+        crumb = crumb_tag.get("value", "")
+        acrumb = acrumb_tag.get("value", "")
+        sessionIndex = sessionIndex_tag.get("value", "")
+        asId = asId_tag.get("value", "")
         cook = req.cookies.get_dict()
         
         payload = {
@@ -461,21 +341,18 @@ def create_aol_account(username):
         return False
 
 def check(email):
-    global bads_instgram, bads_email, go
+    global bads_instgram, bads_email, go, hits
     
     try:
-     
         b = random.randint(5,208)
         bo = f'\x1b[38;5;{b}m'
         bi = random.randint(5,208)
         bos = f'\x1b[38;5;{bi}m'
         
-       
         email_exists = check_email_on_instagram(email)
         
         if email_exists:
             go += 1
-            
             
             if '@' in email:
                 username = email.split('@')[0]
@@ -484,19 +361,15 @@ def check(email):
                 username = email
                 domain = "aol.com"
             
-           
             if create_aol_account(username):
-              
                 result = info(username, domain)
-                
                 if not result:
-                    
+                    # Followers condition fail - hit already not incremented
                     pass
             else:
                 bads_email += 1
         else:
             bads_instgram += 1
-        
         
         os.system('clear' if os.name == 'posix' else 'cls')
         
@@ -509,6 +382,7 @@ def check(email):
     {R}Bad Mail       : {bads_email} {Z} 
     {Y}Bad Instagram  : {bads_instgram} 
     {C}Good Accounts  : {go}
+    {B}Min Followers  : {min_followers}
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
      ★ {B} Current Email  : {email}
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━    
@@ -520,11 +394,10 @@ def check(email):
     except Exception as e:
         print(f"Error in check function: {e}")
 
-
-
 executor = ThreadPoolExecutor(max_workers=30)
 
 def Users():
+    global iud, uid
     try:
         headers = {
             'accept': '*/*',
@@ -584,7 +457,6 @@ else:
 def ExUsers():
     for _ in range(1000):  
         Users()
-
 
 threads = []
 for _ in range(100): 
